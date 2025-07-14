@@ -1,0 +1,163 @@
+.container {
+  padding: 0 1.6rem;
+}
+
+.glamping_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glamping_title {
+  display: block;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 2.5rem); /* от 24px до 48px, адаптивно */
+  text-align: center;
+}
+
+.glamping_list {
+  display: grid;
+  grid-template-columns: 1fr; /* адаптивно */
+  gap: 2rem;
+  width: 100%;
+  list-style: none;
+}
+
+.glamping_card {
+  position: relative;
+  left: -2px;
+  width: 100%;
+}
+
+.glamping_card::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 0;
+}
+
+.glamping_image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.glamping_text_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: start;
+  gap: 2rem;
+}
+.glamping_text {
+  font-size: 1.8rem;
+}
+
+.glamping_button {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 2rem;
+  background-color: white;
+  border: 1px black solid;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+  color: black;
+}
+
+.glamping_link {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.glamping_button:active {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (min-width: 1440px) {
+  .glamping_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start; /* <-- это */
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .glamping_text_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: start;
+    gap: 2rem;
+    order: 2;
+  }
+
+  .glamping_title {
+    width: 100%;
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 7rem; /* от 24px до 48px, адаптивно */
+    text-align: start;
+  }
+
+  .glamping_list {
+    display: grid;
+    grid-template-columns: 1fr; /* адаптивно */
+    gap: 2rem;
+    width: 100%;
+    list-style: none;
+    place-items: center;
+  }
+
+  .glamping_card {
+    position: relative;
+    left: -2px;
+    width: 89%;
+  }
+  .glamping_image {
+    display: block;
+    width: 600px;
+    position: relative;
+    z-index: 1;
+  }
+  .glamping_text {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.45;
+  }
+
+  .glamping_button {
+    text-transform: uppercase;
+    width: 50%;
+    font-size: 2rem;
+    background-color: white;
+    border: 1px black solid;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.5s, background-color 0.5s;
+    color: black;
+  }
+
+  .glamping_link {
+    display: block;
+    width: 100%;
+    padding: 2rem 6rem;
+  }
+
+  .glamping_button:hover {
+    color: white;
+    background-color: black;
+  }
+}

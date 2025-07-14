@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.count_display {
+  display: block;
+  width: 4ch; /* ширина на 3 символа */
+  font-size: 1.8rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums; /* для равномерной ширины цифр */
+}
+
+.item_button {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid #2f2b2b;
+}
+
+.item_button:disabled {
+  background-color: #e0e0e0; /* светло-серый */
+  color: #9e9e9e;
+  border-color: #c0c0c0;
+}
+
+._increment {
+  background-color: transparent;
+}
+
+._decrement {
+  background-color: #ffdfa4;
+}

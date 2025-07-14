@@ -1,0 +1,43 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  width: 60%;
+  padding: 1rem;
+  background-color: #fef3df;
+}
+
+.card_image {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card_title {
+  font-size: 1.6rem;
+  font-family: var(--font-jost);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card_text {
+  font-size: 1.4rem;
+  font-family: var(--font-jost);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card_button {
+  width: 50%;
+  font-size: 1.3rem;
+  font-family: var(--font-jost);
+  font-weight: 400;
+  background-color: #242121;
+  text-transform: uppercase;
+  color: white;
+  justify-self: center;
+  border: none;
+  padding: 1rem 0;
+}

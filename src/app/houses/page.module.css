@@ -1,0 +1,170 @@
+.container {
+  padding: 0 1.6rem;
+}
+
+.our_houses {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+
+.our_houses_text_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+
+.our_houses_title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: clamp(2.3rem, 5vw, 3.3rem);
+  text-transform: uppercase;
+}
+
+.our_houses_text {
+  font-size: 1.8rem;
+}
+
+.our_houses_link {
+  display: block;
+  width: 100%;
+}
+
+.our_houses_button {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 2rem;
+  background-color: white;
+  border: 1px black solid;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: color 0.5s, background-color 0.5s;
+  color: black;
+}
+
+.our_houses_button:active {
+  color: white;
+  background-color: black;
+}
+
+.our_houses_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.our_houses_card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+
+  background-color: #fef3df;
+}
+
+.our_houses_card_title {
+  font-size: clamp(1.8rem, 5vw, 2.3rem); /* от 24px до 48px, адаптивно */
+}
+
+.our_houses_card_image {
+  width: 100%;
+}
+
+.our_houses_card_button {
+  width: 60%;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  align-self: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.our_houses_card_link {
+  display: block;
+  width: 100%;
+}
+
+.our_houses_card_button:active {
+  color: black;
+  background-color: #ffdfa4;
+}
+
+@media screen and (min-width: 1400px) {
+  .our_houses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+  }
+
+  .our_houses_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .our_houses_title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 7rem;
+    text-transform: uppercase;
+  }
+
+  .our_houses_text {
+    font-size: 2rem;
+    line-height: 1.45;
+  }
+
+  .our_houses_button {
+    text-transform: uppercase;
+    width: 50%;
+    font-size: 2rem;
+    background-color: white;
+    border: 1px black solid;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.5s, background-color 0.5s;
+    color: black;
+  }
+
+  .our_houses_button:hover {
+    color: black;
+    background-color: #ffdfa4;
+  }
+
+  .our_houses_card_button {
+    width: 60%;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  .our_houses_card_button:hover {
+    color: black;
+    background-color: #ffdfa4;
+  }
+
+  .our_houses_card_link {
+    display: block;
+    width: 100%;
+    padding: 1rem 3.4rem;
+  }
+  .our_houses_link {
+    display: block;
+    padding: 2rem 6rem;
+    width: 100%;
+  }
+}
