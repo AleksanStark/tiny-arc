@@ -87,10 +87,10 @@
 
 @media screen and (min-width: 1440px) {
   .glamping_section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start; /* <-- это */
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -99,7 +99,6 @@
     grid-template-columns: 1fr;
     place-items: start;
     gap: 2rem;
-    order: 2;
   }
 
   .glamping_title {
@@ -109,12 +108,12 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 7rem; /* от 24px до 48px, адаптивно */
-    text-align: start;
+    text-align: center;
   }
 
   .glamping_list {
     display: grid;
-    grid-template-columns: 1fr; /* адаптивно */
+    grid-template-columns: repeat(2, 2fr); /* адаптивно */
     gap: 2rem;
     width: 100%;
     list-style: none;
@@ -148,6 +147,7 @@
     padding: 0;
     transition: color 0.5s, background-color 0.5s;
     color: black;
+    place-self: center;
   }
 
   .glamping_link {

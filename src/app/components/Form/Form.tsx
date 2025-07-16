@@ -17,7 +17,9 @@ export default function Form() {
       <form className={styles.glamping_form} onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.form_name_group}>
           <div>
-            <label htmlFor="name">Name</label>
+            <label className={styles.form_label} htmlFor="name">
+              Name
+            </label>
             <input
               className={styles.form_input}
               id="name"
@@ -27,7 +29,9 @@ export default function Form() {
           </div>
 
           <div>
-            <label htmlFor="name">Name</label>
+            <label className={styles.form_label} htmlFor="name">
+              Last Name
+            </label>
             <input
               className={styles.form_input}
               id="lastName"
@@ -36,7 +40,9 @@ export default function Form() {
             {errors.errors.lastName && <span>This field is required</span>}
           </div>
         </div>
-        <label htmlFor="email">Email</label>
+        <label className={styles.form_label} htmlFor="email">
+          Email
+        </label>
         <input
           className={styles.form_input}
           id="email"
@@ -44,11 +50,15 @@ export default function Form() {
           type="email"
         />
         {errors.errors.email && <span>This field is required</span>}
-        <label htmlFor="message">Message</label>
+        <label className={styles.form_label} htmlFor="message">
+          Message
+        </label>
         <textarea
+          className={styles.form_textarea}
           id="message"
           {...register("message", { required: true })}
         ></textarea>
+        {errors.errors.message && <span>This field is required</span>}
       </form>
     </div>
   );
