@@ -38,7 +38,7 @@
   font-size: 1.8rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .glamping_form {
     background-color: #fef3df;
     display: flex;

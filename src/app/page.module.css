@@ -85,7 +85,7 @@
   background-color: black;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .glamping_section {
     display: flex;
     flex-direction: column;

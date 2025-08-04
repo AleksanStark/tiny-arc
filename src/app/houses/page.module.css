@@ -96,7 +96,7 @@
   background-color: #ffdfa4;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
   .our_houses {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
